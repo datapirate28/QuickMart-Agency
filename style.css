@@ -249,6 +249,10 @@ section.home{
     .services{
         grid-template-columns: 1fr;
     }
+
+    .services .service{
+        box-shadow: 1px 1px 18px 3px rgba(0, 0, 0, 0.11);
+    }
 }
 
 /* Work Page */
@@ -319,6 +323,123 @@ section.home{
         grid-template-columns: 1fr;
     }
 }
+
+
+/* Contact */
+
+.contact{
+    position: relative;
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+
+.contact-form{
+    position: relative;
+    background-color: #f9f9f9;
+    width: calc(100% - 400px);
+    padding: 60px 40px 20px;
+}
+
+.contact-form form{
+    width: 100%;
+}
+
+.contact-form .row{
+    width: 100%;
+    display: flex;
+}
+
+.contact-form .input50{
+    width: 50%;
+    margin: 0 10px;
+}
+
+.contact-form .input100{
+    width: 100%;
+    margin: 0 10px;
+}
+
+.contact-form input, 
+.contact-form textarea{
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, 0.203);
+    outline: none;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 10px 0;
+    resize: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact-form .input100 textarea{
+    height: 150px;
+}
+
+.contact-form .row input[type='submit']{
+    background-color: #1b206e;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 400;
+    cursor: pointer;
+    border: 0;
+}
+
+
+.contact-info{
+    width: 350px;
+    background-color: #f9f9f9;
+    padding: 60px 40px 20px;
+}
+
+.contact-info .info-box{
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+
+.info-box .contact-icon{
+    width: 30px;
+    margin-right: 40px;
+    align-self: center;
+}
+
+.info-box a{
+    color: black;
+    text-decoration: underline;
+}
+
+@media (max-width: 900px){
+    .contact{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .contact-form{
+        width: 100%;
+    }
+
+    .contact-info{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 650px){
+    .row{
+        flex-direction: column;
+    }
+
+    .row .input50{
+        width: 100%;
+    }
+}
+
 
 
 
