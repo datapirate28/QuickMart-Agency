@@ -140,9 +140,16 @@ a{
 
 section{
     display: flex;
+    flex-direction: column;
     height: 100vh;
     align-items: center;
     padding: 5rem;
+    margin-top: 60px;
+}
+
+section.home{
+    flex-direction: row;
+    margin-top: 0;
 }
 
 .home-content{
@@ -168,6 +175,44 @@ section{
     scale: 0.98;
 }
 
+/* Services */
+
+.services{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.services .service{
+    padding: 30px;
+    display: flex;  
+    flex-direction: column;  
+    justify-content: center;
+    align-items: center;
+    transition: 0.1s;
+}
+
+.service:hover{
+    box-shadow: 1px 1px 18px 3px rgba(0, 0, 0, 0.11);
+}
+
+.services .service .icon img{
+    max-width: 100px;
+}
+
+.service h2{
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.service p{
+    text-align: center;
+    margin-top: 4px;
+    font-size: 0.99rem;
+    line-height: 1.5;
+    max-width: 350px;
+}
 
 @media (max-width: 1068px){
     .home-img{
